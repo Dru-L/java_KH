@@ -71,6 +71,11 @@ public class Student implements Comparable<Student> {
 	public void setEnglishScore(int englishScore) {
 		this.englishScore = englishScore;
 	}
+	
+	//영어와 수학 점수 평균값 구하기
+	public double avg() {
+		return (this.mathScore + this.englishScore) / 2.0;
+	}
 
 	@Override
 	public String toString() {
